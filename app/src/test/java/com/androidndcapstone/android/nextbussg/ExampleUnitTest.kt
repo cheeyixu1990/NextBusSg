@@ -1,4 +1,4 @@
-package com.example.android.nextbussg
+package com.androidndcapstone.android.nextbussg
 
 import org.junit.Test
 

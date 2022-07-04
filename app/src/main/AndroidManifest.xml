@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.nextbussg" >
+    package="com.androidndcapstone.android.nextbussg" >
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NextBusSg" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.androidndcapstone.android.nextbussg.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.NextBusSg.NoActionBar" >

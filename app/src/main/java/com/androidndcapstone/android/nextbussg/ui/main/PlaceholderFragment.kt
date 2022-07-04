@@ -1,4 +1,4 @@
-package com.example.android.nextbussg.ui.main
+package com.androidndcapstone.android.nextbussg.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.android.nextbussg.R
-import com.example.android.nextbussg.databinding.FragmentMainBinding
+import com.androidndcapstone.android.nextbussg.databinding.FragmentMainBinding
 
 /**
  * A placeholder fragment containing a simple view.
