@@ -5,15 +5,24 @@ import com.androidndcapstone.android.nextbussg.data.source.remote.BusApi
 import com.androidndcapstone.android.nextbussg.data.source.remote.parseBusRouteJsonResult
 import com.androidndcapstone.android.nextbussg.data.source.remote.parseBusServiceJsonResult
 import com.androidndcapstone.android.nextbussg.data.source.remote.parseBusStopJsonResult
+import com.androidndcapstone.android.nextbussg.ui.data.*
 import com.androidndcapstone.android.nextbussg.ui.data.toDbBusRouteList
 import com.androidndcapstone.android.nextbussg.ui.data.toDbBusServiceList
 import com.androidndcapstone.android.nextbussg.ui.data.toDbBusStopList
+import com.androidndcapstone.android.nextbussg.ui.model.BusStop
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import retrofit2.await
 
 class BusRepo (private val database: BusDatabase){
+
+    suspend fun getAllBusStopsFromDatabase(): List<BusStop> {
+        val dbBusStopList: List<DbBusStop>
+        dbBusStopList = database.busStopDao.getAllBusStops()
+
+        return dbBusStopList.toBusStopList()
+    }
 
     suspend fun syncBusRoutesFromServer(){
         withContext(Dispatchers.IO)  {
