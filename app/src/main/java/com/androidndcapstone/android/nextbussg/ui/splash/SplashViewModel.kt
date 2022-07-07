@@ -1,10 +1,10 @@
-package com.androidndcapstone.android.nextbussg
+package com.androidndcapstone.android.nextbussg.ui.splash
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.*
-import com.androidndcapstone.android.nextbussg.ui.data.BusRepo
-import com.androidndcapstone.android.nextbussg.ui.data.getDatabase
+import com.androidndcapstone.android.nextbussg.data.BusRepo
+import com.androidndcapstone.android.nextbussg.data.getDatabase
 import com.androidndcapstone.android.nextbussg.ui.model.BusRoute
 import com.androidndcapstone.android.nextbussg.ui.model.BusService
 import com.androidndcapstone.android.nextbussg.ui.model.BusStop

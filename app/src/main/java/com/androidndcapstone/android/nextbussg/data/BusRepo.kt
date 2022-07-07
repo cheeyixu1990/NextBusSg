@@ -1,10 +1,13 @@
-package com.androidndcapstone.android.nextbussg.ui.data
+package com.androidndcapstone.android.nextbussg.data
 
 import com.androidndcapstone.android.nextbussg.Constants
-import com.androidndcapstone.android.nextbussg.ui.data.source.remote.BusApi
-import com.androidndcapstone.android.nextbussg.ui.data.source.remote.parseBusRouteJsonResult
-import com.androidndcapstone.android.nextbussg.ui.data.source.remote.parseBusServiceJsonResult
-import com.androidndcapstone.android.nextbussg.ui.data.source.remote.parseBusStopJsonResult
+import com.androidndcapstone.android.nextbussg.data.source.remote.BusApi
+import com.androidndcapstone.android.nextbussg.data.source.remote.parseBusRouteJsonResult
+import com.androidndcapstone.android.nextbussg.data.source.remote.parseBusServiceJsonResult
+import com.androidndcapstone.android.nextbussg.data.source.remote.parseBusStopJsonResult
+import com.androidndcapstone.android.nextbussg.ui.data.toDbBusRouteList
+import com.androidndcapstone.android.nextbussg.ui.data.toDbBusServiceList
+import com.androidndcapstone.android.nextbussg.ui.data.toDbBusStopList
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject

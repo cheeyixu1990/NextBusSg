@@ -1,7 +1,10 @@
-package com.androidndcapstone.android.nextbussg.ui.data
+package com.androidndcapstone.android.nextbussg.data
 
 import android.content.Context
 import androidx.room.*
+import com.androidndcapstone.android.nextbussg.ui.data.DbBusRoute
+import com.androidndcapstone.android.nextbussg.ui.data.DbBusService
+import com.androidndcapstone.android.nextbussg.ui.data.DbBusStop
 
 @Dao
 interface BusRouteDao {

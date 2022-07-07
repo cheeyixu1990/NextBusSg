@@ -1,28 +1,9 @@
-package com.androidndcapstone.android.nextbussg
+package com.androidndcapstone.android.nextbussg.ui.splash
 
 import androidx.appcompat.app.AppCompatActivity
-import android.annotation.SuppressLint
-import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.view.MotionEvent
-import android.view.View
-import android.view.WindowInsets
-import android.widget.LinearLayout
-import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.viewpager2.adapter.FragmentStateAdapter
-import androidx.viewpager2.widget.ViewPager2
-import com.androidndcapstone.android.nextbussg.databinding.ActivityMainBinding
 import com.androidndcapstone.android.nextbussg.databinding.ActivitySplashBinding
-import com.androidndcapstone.android.nextbussg.ui.main.BusNumberFragment
-import com.androidndcapstone.android.nextbussg.ui.main.BusStopFragment
-import com.androidndcapstone.android.nextbussg.ui.main.NearbyFragment
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

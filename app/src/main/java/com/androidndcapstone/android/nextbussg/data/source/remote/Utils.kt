@@ -1,4 +1,4 @@
-package com.androidndcapstone.android.nextbussg.ui.data.source.remote
+package com.androidndcapstone.android.nextbussg.data.source.remote
 
 import com.androidndcapstone.android.nextbussg.ui.model.*
 import org.json.JSONObject

@@ -3,8 +3,8 @@ package com.androidndcapstone.android.nextbussg.backgroudwork
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.androidndcapstone.android.nextbussg.ui.data.BusRepo
-import com.androidndcapstone.android.nextbussg.ui.data.getDatabase
+import com.androidndcapstone.android.nextbussg.data.BusRepo
+import com.androidndcapstone.android.nextbussg.data.getDatabase
 import retrofit2.HttpException
 
 class BusDataSyncWork(appContext: Context, params: WorkerParameters):

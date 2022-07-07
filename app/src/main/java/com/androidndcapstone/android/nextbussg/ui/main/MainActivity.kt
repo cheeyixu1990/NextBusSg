@@ -1,4 +1,4 @@
-package com.androidndcapstone.android.nextbussg
+package com.androidndcapstone.android.nextbussg.ui.main
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.androidndcapstone.android.nextbussg.R
 //import com.example.android.nextbussg.ui.main.SectionsPagerAdapter
 import com.androidndcapstone.android.nextbussg.databinding.ActivityMainBinding
 import com.androidndcapstone.android.nextbussg.ui.main.BusNumberFragment

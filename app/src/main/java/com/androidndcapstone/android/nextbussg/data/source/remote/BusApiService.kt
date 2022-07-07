@@ -1,4 +1,4 @@
-package com.androidndcapstone.android.nextbussg.ui.data.source.remote
+package com.androidndcapstone.android.nextbussg.data.source.remote
 
 import com.androidndcapstone.android.nextbussg.Constants
 import com.squareup.moshi.Moshi
