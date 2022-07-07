@@ -1,19 +1,17 @@
 package com.androidndcapstone.android.nextbussg.ui.main
 
+//import com.example.android.nextbussg.ui.main.SectionsPagerAdapter
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.tabs.TabLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.androidndcapstone.android.nextbussg.R
-//import com.example.android.nextbussg.ui.main.SectionsPagerAdapter
 import com.androidndcapstone.android.nextbussg.databinding.ActivityMainBinding
-import com.androidndcapstone.android.nextbussg.ui.main.BusNumberFragment
-import com.androidndcapstone.android.nextbussg.ui.main.BusStopFragment
-import com.androidndcapstone.android.nextbussg.ui.main.NearbyFragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 
@@ -69,7 +67,11 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         val viewPager = binding.viewPager
         if (viewPager.currentItem == 0) {
-            super.onBackPressed()
+            val intent = Intent(Intent.ACTION_MAIN).apply {
+                addCategory(Intent.CATEGORY_HOME)
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            startActivity(intent)
         } else {
             viewPager.currentItem = viewPager.currentItem - 1
         }

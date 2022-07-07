@@ -28,7 +28,7 @@ class BusStopFragment : Fragment() {
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
         busStopListAdapter = BusStopListAdapter(
-            BusStopClickListener {
+            BusStopListAdapter.BusStopClickListener {
 
             }
         )

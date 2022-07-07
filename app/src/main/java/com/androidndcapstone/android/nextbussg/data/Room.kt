@@ -1,6 +1,7 @@
 package com.androidndcapstone.android.nextbussg.data
 
 import android.content.Context
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.androidndcapstone.android.nextbussg.ui.data.DbBusRoute
 import com.androidndcapstone.android.nextbussg.ui.data.DbBusService
@@ -13,6 +14,9 @@ interface BusRouteDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAllBusRoutes(list: List<DbBusRoute>)
+
+    @Query("select service_no from bus_routes where stop_code = :busStopCode order by service_no desc")
+    fun getBusServiceNumbersByBusStop(busStopCode: String): LiveData<List<BusStopBusService>>
 }
 
 @Dao
