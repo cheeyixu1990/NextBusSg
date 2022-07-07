@@ -6,15 +6,16 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class BusRoute(
-    @Json(name = "ServiceNo") val busRouteServiceNumber: String,
-    @Json(name = "Direction") val busRouteDirection: String,
-    @Json(name = "StopSequence") val busRouteStopSequence: String,
-    @Json(name = "BusStopCode") val busRouteStopCode: String,
-    @Json(name = "Distance") val busRouteDistance: String,
-    @Json(name = "WD_FirstBus") val wkdayFirstBus: String,
-    @Json(name = "WD_LastBus") val wkdayLastBus: String,
-    @Json(name = "SAT_FirstBus") val satFirstBus: String,
-    @Json(name = "SAT_LastBus") val satLastBus: String,
-    @Json(name = "SUN_FirstBus") val sunFirstBus: String,
-    @Json(name = "SUN_LastBus") val sunLastBus: String
+    val busRouteServiceNumber: String,
+    val busRouteOperator: String,
+    val busRouteDirection: Int,
+    val busRouteStopSequence: Int,
+    val busRouteStopCode: String,
+    val busRouteDistance: Double,
+    val wkdayFirstBus: String,
+    val wkdayLastBus: String,
+    val satFirstBus: String,
+    val satLastBus: String,
+    val sunFirstBus: String,
+    val sunLastBus: String
 ) : Parcelable

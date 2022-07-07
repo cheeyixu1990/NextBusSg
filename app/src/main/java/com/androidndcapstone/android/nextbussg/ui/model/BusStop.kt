@@ -6,9 +6,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class BusStop(
-    @Json(name = "BusStopCode") val busStopCode: String,
-    @Json(name = "RoadName") val busStopRoadName: String,
-    @Json(name = "Description") val busStopDescription: String,
-    @Json(name = "Latitude") val busStopLatitude: String,
-    @Json(name = "Longitude") val busStopLongitude: String
+    val busStopCode: String,
+    val busStopRoadName: String,
+    val busStopDescription: String,
+    val busStopLatitude: Double,
+    val busStopLongitude: Double
 ): Parcelable

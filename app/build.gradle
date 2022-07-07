@@ -33,6 +33,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
 }
 
@@ -68,4 +69,5 @@ dependencies {
     implementation "androidx.room:room-ktx:2.4.2"
 
     implementation "android.arch.work:work-runtime-ktx:1.0.1"
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
 }

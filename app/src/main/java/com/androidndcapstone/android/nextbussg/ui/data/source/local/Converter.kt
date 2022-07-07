@@ -1,4 +1,4 @@
-package com.androidndcapstone.android.nextbussg.ui.database
+package com.androidndcapstone.android.nextbussg.ui.data
 
 import com.androidndcapstone.android.nextbussg.ui.model.BusRoute
 import com.androidndcapstone.android.nextbussg.ui.model.BusService
@@ -6,11 +6,11 @@ import com.androidndcapstone.android.nextbussg.ui.model.BusStop
 
 // Bus route
 internal fun BusRoute.toDbBusRoute() = DbBusRoute(
-    busRouteServiceNumber, busRouteDirection, busRouteStopSequence, busRouteStopCode, busRouteDistance, wkdayFirstBus, wkdayLastBus, satFirstBus, satLastBus, sunFirstBus, sunLastBus
+    busRouteServiceNumber, busRouteOperator, busRouteDirection, busRouteStopSequence, busRouteStopCode, busRouteDistance, wkdayFirstBus, wkdayLastBus, satFirstBus, satLastBus, sunFirstBus, sunLastBus
 )
 
 internal fun DbBusRoute.toBusRoute() = BusRoute(
-    busRouteServiceNumber, busRouteDirection, busRouteStopSequence, busRouteStopCode, busRouteDistance, wkdayFirstBus, wkdayLastBus, satFirstBus, satLastBus, sunFirstBus, sunLastBus
+    busRouteServiceNumber, busRouteOperator, busRouteDirection, busRouteStopSequence, busRouteStopCode, busRouteDistance, wkdayFirstBus, wkdayLastBus, satFirstBus, satLastBus, sunFirstBus, sunLastBus
 )
 
 internal fun List<BusRoute>.toDbBusRouteList() = map {
